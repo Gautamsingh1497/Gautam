@@ -1,132 +1,139 @@
+* {
+    margin: 0px;
+    text-decoration: none;
+}
+
 .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 100vh;
+    padding: 25px;
+}
+
+.box1 {
+    background-color: rgb(255, 241, 241);
+    border-radius: 30px 30px 0px 0px;
+    box-shadow: 0px 0px 5px 10px;
+}
+
+.box2 {
+    background-color: rgba(151, 151, 151, 0.799);
+    background-image: url(Gautam.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 60%;
+    box-shadow: 0px 5px 0px 10px;
+}
+
+.box3 {
+    background-color: rgb(255, 241, 241);
+    border-radius: 0px 0px 30px 30px;
+    box-shadow: 0px 0px 5px 10px;
+}
+
+header {
+    display: block;
+    color: rgb(0, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 6fr 2fr;
+}
+
+button {
+    float: right;
+    padding: 5px;
     background-color: red;
-    display: grid;
-    grid-template-columns: repeat(12* 1fr);
-}
-
-.cont1 {
-    padding: 2% 20% 10px 20%;
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-gap: 10px;
-    border-radius: 3px;
-    grid-auto-rows: 15px;
-}
-
-.head {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 1;
-    grid-column-end: 10;
-}
-
-.icons {
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-column-start: 10;
-    grid-column-end: 12;
-}
-
-.name {
-    grid-row-start: 3;
-    grid-row-end: 6;
-    grid-column-start: 1;
-    grid-column-end: 2;
-    font-size: 50px;
-    padding: auto;
-}
-
-.about {
-    grid-row-start: 6;
-    grid-row-end: 9;
-    padding: auto;
-}
-
-.button {
-    grid-row-start: 9;
-    padding:30px;
-    grid-row-end: 12;
-    text-align:inherit;
-}
-button{
-    text-align: center;
+    color: white;
     border-radius: 5px;
 }
-.image{
-    grid-row-start: 3;
-    grid-row-end: 12;
-    grid-column-start: 2;
-    grid-column-end: 10;
-    font-size: 50px;
- 
+
+.a1 {
+    padding: 0px 20px 0px 20px;
+    color: black;
 }
-img{
-    height: 250px;
-    border-radius: 15px;
+.c1 img{
+    width: 125px;
 }
-.cont3 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0% 20% 0% 20%;
-    grid-gap: 10px;
-    border-radius: 3px;
-    grid-auto-rows: 15px;
+
+.c2,.c3{
+    padding: 30px;
 }
-.skill{
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
+a:hover{
+    color: red;
+    text-transform: uppercase;
 }
-.about2{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 8;
-    overflow: hidden;
+button:hover{
+    background-color: green;
 }
-.scale{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 8;
+
+.b1{
+    padding: 5% 55% 20% 5%;
+}
+.but1{
+    width: 40%;
+    margin: 5%;
+}
+.sol{
+    padding: 20px;
+    color: red;
+}
+.about,h1{
+    color: black;
+    padding: 20px;
+}
+h1{
+    font-size: 40px;
+    font-weight: bold;
 }
 .foot{
-    padding: 2% 20% 2% 20%;
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-gap: 10px;
-    border-radius: 3px;
-    grid-auto-rows: 25px;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 900;
 }
-.welcome,.lic{
-
-    text-align: cente;
-}
-.pad1{
-    padding: 10px;
-    color: black;
-}
-.pad1:hover{
-    color: chartreuse;
-}
-.pad2{
-    padding: 5px;
-    color: black;
-}
-.pad2:hover{
-    color: chartreuse;
-}
-img{
+.a2{
     float: right;
 }
-.skill{
-    text-align: center;
+.icn a{
+    padding: 10px;
 }
-.about2{
-    padding: 5px;
-}
-.img2{
-    height: 115px;
-    width: 400px;
+
+@media screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .c2{
+        display: flex;
+        flex-direction: column;
+    }
+    button{
+        float: left;
+    }
+    .b1{
+        padding: 20% 55% 0% 10%;
+    }
+    .box2{
+        background-image: url(Gautam.png);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: 70%;
+    }
+    .but{
+        display: flex;
+        flex-direction: column;
+        width: 140%;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .foot1,.foot2.icn{
+        padding: 25px;
+        
+    }
 }
